@@ -1,0 +1,19 @@
+<h2>Leave Request</h2>
+
+<div class="box">
+  <label>Employee</label>
+  <select [(ngModel)]="selectedEmpId">
+    <option [ngValue]="null">-- Select Employee --</option>
+    <option *ngFor="let emp of hr.employees" [ngValue]="emp.id">
+      {{ emp.name }} ({{ emp.department }})
+    </option>
+  </select>
+
+  <label>Leave Date</label>
+  <input type="date" [(ngModel)]="leaveDate" />
+
+  <label>Reason</label>
+  <input type="text" [(ngModel)]="reason" />
+
+  <button (click)="submit()">Submit Leave</button>
+</div>

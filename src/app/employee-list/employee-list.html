@@ -1,0 +1,27 @@
+<h2>Employee List</h2>
+
+<div class="employee-container">
+
+  <!-- Header Row -->
+  <div class="emp-row header">
+    <div class="cell">ID</div>
+    <div class="cell">Name</div>
+    <div class="cell">Department</div>
+    <div class="cell">Attendance</div>
+  </div>
+
+  <!-- Employee Rows -->
+  <div class="emp-row" *ngFor="let emp of hr.employees">
+    <div class="cell">{{ emp.id }}</div>
+    <div class="cell">{{ emp.name }}</div>
+    <div class="cell">{{ emp.department }}</div>
+    <div class="cell">
+      <span
+        [class.present]="emp.attendance === 'Present'"
+        [class.absent]="emp.attendance === 'Absent'">
+        {{ emp.attendance }}
+      </span>
+    </div>
+  </div>
+
+</div>

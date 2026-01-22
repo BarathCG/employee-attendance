@@ -1,0 +1,13 @@
+<h2>Pending Leave Requests</h2>
+
+<div class="box" *ngFor="let leave of hr.getPendingLeaves()">
+  <p><b>{{ leave.name }}</b></p>
+  <p>Department: {{ leave.department }}</p>
+  <p>Date: {{ leave.date }}</p>
+  <p>Reason: {{ leave.reason }}</p>
+  <p>Status: {{ leave.status }}</p>
+</div>
+
+<p *ngIf="hr.getPendingLeaves().length === 0">
+  No pending leave requests
+</p>

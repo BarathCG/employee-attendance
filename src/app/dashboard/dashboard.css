@@ -1,0 +1,62 @@
+.title {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+/* STAT CARDS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  width: 180px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.stat-card p {
+  font-size: 28px;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+.blue { background: linear-gradient(135deg, #1976d2, #42a5f5); }
+.green { background: linear-gradient(135deg, #2e7d32, #66bb6a); }
+.red { background: linear-gradient(135deg, #c62828, #ef5350); }
+.orange { background: linear-gradient(135deg, #ef6c00, #ffb74d); }
+
+/* NAVIGATION CARDS */
+.nav-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.nav-card {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.nav-card h4 {
+  color: #1976d2;
+}
